@@ -1,0 +1,1026 @@
+body {
+    background-color: #F5F6F8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: stretch;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 1140px;
+    height: 850px;
+}
+
+nav {
+    background-color: #FFFFFF;
+    box-shadow: 6px 0px 10px rgba(29, 17, 17, 0.06);
+    width: 256px;
+    flex-grow: 1;
+    height: 850px;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    border: none;
+}
+
+header {
+    border-bottom: #EBEFF2 1px solid;
+    padding-left: 24px;
+    padding-top: 19px;
+    padding-bottom: 2px;
+    margin: 0;
+    width: 256px;
+    line-height: 1;
+    flex-basis: 60px;
+    align-self: center;
+}
+
+.sidebarmain {
+    flex-basis: 42%;
+    border-bottom: 1pt solid #EBEFF2;
+    padding: 1rem 0 0 0;
+    margin-left: 0;
+
+}
+
+.sidebarsettings {
+    flex-basis: 46%;
+    /*border-top: 1pt solid #EBEFF2;*/
+    padding: 0;
+    margin-left: 26.5px;
+}
+
+
+.sidebartoggle {
+    flex-basis: 5%;
+    margin-left: 26.5px;
+    align-self: baseline;
+}
+
+.sidebartoggle button {
+    border: none;
+    font-family: inherit;
+    background-color: white;
+    font-size: 11px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #90A0B7;
+    padding-bottom: 22px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+.calendar button:hover:not(.selected), .calendar div:hover {
+    color: #109CF1;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+nav h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24.51px;
+    color: #109CF1;
+    margin: 0;
+}
+
+nav h2 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #192A3E;
+    display: inline;
+}
+
+.prophilephoto {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+}
+
+.email {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16.5px;
+    letter-spacing: 0.01em;
+    color: #90A0B7;
+    display: inline;
+}
+
+.menu, .sidebarsettings {
+    color: #334D6E;
+    font-size: 13px;
+    line-height: 19.5px;
+    padding-top: none;
+    margin-top: none;
+    font-weight: 600;
+}
+
+nav ul li {
+    list-style-type: none;
+    line-height: 16.67px;
+    height: 50px;
+}
+
+nav ul svg, .sidebarsettings svg, .sidebartoggle button svg {
+    vertical-align: middle;
+    margin-right: 16.5px;
+    stroke: #C2CFE0;
+}
+
+.sidebarsettings svg {
+    fill: #C2CFE0;
+}
+
+.sidebarsettings svg:hover {
+    fill: #109CF1;
+
+}
+
+svg:hover {
+    stroke: #109CF1;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #334D6E;
+}
+
+nav a:hover, .card a:hover {
+    color: #109CF1;
+}
+
+nav ul {
+    margin: 0;
+    padding: 39px 0 0 26.5px;
+}
+
+.main {
+    width: 1184px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.searchbar {
+    z-index: 5;
+    width: 100%;
+    flex-basis: 60px;
+    background-color: #ffffff;
+    /*position: fixed;
+    left: 256px;
+    right: 0%;*/
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: #EBEFF2 1px solid;
+    flex: 0;
+    padding: 17px 0 17px 10px;
+}
+
+.initialsearch {
+    flex-grow: 9;
+    padding-left: 1rem;
+    height: 12px;
+}
+
+.searchicon {
+    display: inline;
+    margin: 0;
+}
+
+.search {
+    color: #C2CFE0;
+    margin-right: 0.5rem;
+    /*margin-top:8.5pt; */
+}
+
+.searchbar input {
+    color: #90A0B7;
+    border: none;
+    position: absolute;
+    width: auto;
+    padding-left: 15px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    opacity: 0.5;
+
+}
+
+form {
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+input:focus {
+    outline: none;
+}
+
+.notificationssearch {
+    flex-grow: 1;
+    height: 20px;
+}
+
+.bell {
+    height: 19.5px;
+    width: 16px;
+    position: absolute;
+    /*top:20.5px;
+    bottom:20px;*/
+}
+
+.notificationssearch svg {
+    z-index: 25;
+    margin-left: 6pt;
+    position: absolute;
+    margin-right: 16.5px;
+
+    /*top: 20px;
+    bottom: 32px; */
+}
+
+.notificationssearch circle {
+    height: 8px;
+    width: 8px;
+    fill: #F7685B;
+}
+
+.maintasks {
+    width: 1184px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-areas:
+        "taskschart dealsgraphic"
+        "taskschart progresschart";
+    margin-top: 35px;
+    margin-left: 36px;
+    margin-right: 30px;
+    height: 100%;
+    margin-bottom: 1rem;
+    gap: 15px 30px;
+}
+
+.taskschart {
+    background-color: white;
+    width: 635px;
+    height: 725px;
+    grid-area: taskschart;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 0;
+
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+
+}
+
+.toprowparent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    margin: 0;
+}
+
+.w3-theme {
+    color: #fff !important;
+    background-color: #2ed47a !important
+}
+
+
+.toprowchild1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: #334D6E;
+    padding: 16px 0 16px 0px;
+}
+
+.toprowchild1 p {
+    margin: 0;
+    padding: 0;
+}
+
+.toprowchild2 {
+    padding: 16px 0 16px 0;
+
+}
+
+select {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #109CF1;
+    border: none;
+}
+
+select:focus-visible {
+    outline: none;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+option {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #109CF1;
+}
+
+.tasksinfo {
+    border-bottom: 1pt solid #EBEFF2;
+    /*border grey gray*/
+    width: 100%;
+}
+
+
+.tasksinfo p :not(.worddate) {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #334D6E;
+    display: inline;
+}
+
+label {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #6A707E;
+}
+
+.progressbar {
+    margin: 0 auto 20px auto;
+    width: 587px;
+}
+
+.progressbarcontainer {
+    height: 6px;
+    background-color: #2ED47A;
+}
+
+.worddate {
+    display: block;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #192A3E;
+    padding: 0 24px 60px 24px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 0 24px 0;
+    grid-template-areas:
+        "sun mon tue wed thu fri sat"
+        "day1 day2 day3 day4 day5 day6 day7";
+    justify-items: center;
+    grid-column-gap: 10px;
+}
+
+.sun {
+    grid-area: sun;
+}
+
+.mon {
+    grid-area: mon;
+}
+
+.tue {
+    grid-area: tue;
+}
+
+.wed {
+    grid-area: wed;
+}
+
+.thu {
+    grid-area: thu;
+}
+
+.fri {
+    grid-area: fri;
+}
+
+.sat {
+    grid-area: sat;
+}
+
+.day1 {
+    grid-area: day1;
+}
+
+.day2 {
+    grid-area: day2;
+}
+
+.day3 {
+    grid-area: day3;
+}
+
+.day4 {
+    grid-area: day4;
+}
+
+.day5 {
+    grid-area: day5;
+}
+
+.day6 {
+    grid-area: day6;
+}
+
+.day7 {
+    grid-area: day7;
+}
+
+
+.calendar button {
+    border: none;
+    background: white;
+    color: #4C5862;
+
+}
+
+/*.date{
+    display:flex;
+    flex-flow:row no-wrap;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    width:100%;
+
+}*/
+
+/*.day{
+    display:flex;
+    flex-flow:row no-wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+letter-spacing: 0.01em;
+color: #334D6E;
+width:100%;
+margin-bottom:8px;
+}*/
+
+/*.day div{
+    width:100%;
+}*/
+.calendar .selected {
+    background-color: #109CF1;
+    border-radius: 50%;
+    padding: 2px 5px;
+    margin: 0;
+}
+
+.selected time {
+    color: white;
+
+}
+
+.menu .active, .calendar .active, .active time {
+    color: #109CF1;
+    /*active blue*/
+    opacity: 1;
+}
+
+.calendar .inactive {
+    opacity: 0.5;
+}
+
+.taskcards {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-areas:
+        " gridinfo tasktype"
+        "person status";
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    padding: 16px;
+    width: 100%;
+    margin-top: 16px;
+    height: auto;
+}
+
+.gridinfo {
+    grid-area: gridinfo;
+    margin-bottom: 20px;
+}
+
+.tasktype {
+    grid-area: tasktype;
+    justify-self: end;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: #90A0B7;
+    margin: 0;
+}
+
+.person {
+    grid-area: person;
+}
+
+.status {
+    grid-area: status;
+    justify-self: end;
+    border-radius: 4px;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: white;
+    border: none;
+    box-shadow: none;
+    width: 84px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.editicons {
+    opacity: 0;
+}
+
+.editicons:focus {
+    opacity: 1;
+}
+
+.editicons:hover {
+    opacity: 1;
+}
+
+.editicons:active {
+    opacity: 1;
+}
+
+.statuswithicon {
+    border-radius: 4px;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: white;
+    border: none;
+    box-shadow: none;
+    width: 84px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.completed {
+    background-color: #2ED47A;
+}
+
+.ended {
+    background-color: #F7685B;
+    cursor: pointer;
+
+}
+
+.edit {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.edit svg {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+    height: 100%;
+}
+
+.showmore {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #109CF1;
+    height: 100%;
+    cursor: pointer;
+    background: none;
+    padding-top: 10px;
+}
+
+.taskname {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #323C47;
+    margin-top: 0;
+    margin-bottom: 7px;
+    ;
+}
+
+.due {
+    font-size: 13px;
+    letter-spacing: 0.01em;
+    color: #4C5862;
+    opacity: 0.5;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+time {
+    font-size: 13px;
+    letter-spacing: 0.01em;
+    color: #4C5862;
+    opacity: 1;
+}
+
+.employeename {
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #707683;
+    margin: 0;
+    align-self: center;
+}
+
+.person img {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+
+}
+
+.dealsgraphic, .progresschart {
+    background-color: white;
+    height: 344px;
+    width: 445px;
+    margin-right: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+
+.dealsgraphic {
+    grid-area: dealsgraphic;
+
+}
+
+.title {
+    height: 54px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    margin: 0;
+    border-bottom: solid 1px #EBEFF2;
+}
+
+.title p {
+    margin: 0;
+    padding: 0;
+}
+
+.dealschart {
+    margin: 0 24px 16px 24px;
+}
+
+.dealschartkey {
+    margin: 16px 0;
+}
+
+.dealschartkey circle {
+    fill: none;
+    background-color: white;
+}
+
+.dealschartkey p {
+    display: inline;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    letter-spacing: 0.01em;
+    color: #192A3E;
+    padding-left: 8px;
+}
+
+.progresschart {
+    grid-area: progresschart;
+}
+
+.progressmaingrid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "progresspic progresskey";
+}
+
+.progresspic {
+    grid-area: progresspic;
+    margin-left: 48px;
+    margin-top: 33px;
+    padding-right: 0;
+}
+
+.progresspic circle {
+    fill: none;
+    background-color: white;
+}
+
+.progresskey {
+    grid-area: progresskey;
+    align-self: center;
+    justify-self: start;
+    padding: 0;
+}
+
+.progresskey li {
+    list-style-type: none;
+}
+
+.progresskey p {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    color: #192A3E;
+}
+
+.progresskey circle {
+    fill: none;
+    background-color: white;
+    display: inline;
+}
+
+/*@media only screen and (max-width: 953px){
+
+.flexcontainer {
+    height: 100%;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    align-items: center;
+
+}
+
+.searchbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: none;
+}
+
+.maintasks {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0;
+}
+}*/
+
+
+@media only screen and (max-width: 415px) {
+
+
+    .flexcontainer {
+        height: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .searchbar {
+        width: 375px;
+        position: fixed;
+        top: 0;
+        border-bottom: none;
+    }
+
+    .maintasks {
+        margin: 50px 0 0 0;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0;
+    }
+
+    .taskschart {
+        width: 375px;
+    }
+
+    .taskcards {
+        width: 327px;
+        margin-top: 0;
+        margin-bottom: 16px;
+        padding-bottom: 0;
+    }
+
+    .card {
+        grid-template-columns: 195px 100px;
+        width: 327px;
+        height: 126px;
+        padding: 16px;
+    }
+
+    .toprowchild1 p {
+        font-size: 13px;
+    }
+
+    .toprowchild2 {
+        font-size: 12px;
+    }
+
+    .calendar {
+        display: none;
+    }
+
+    .progressbar {
+        width: 327px;
+    }
+
+    .worddate {
+        padding-bottom: 15px;
+    }
+
+    .editicons {
+        display: inline;
+        opacity: 1;
+    }
+
+    .pen {
+        display: none;
+    }
+
+    .trash {
+        display: none;
+    }
+
+    .endtrash {
+        display: inline;
+        opacity: 1;
+    }
+
+    .taskname {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 190px;
+    }
+
+    .status {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        justify-self: end;
+
+    }
+
+
+
+    .due {
+        letter-spacing: 0.01em;
+    }
+
+    time {
+        letter-spacing: 0.01em;
+    }
+
+    .showmore {
+        display: none;
+    }
+
+    .dealsgraphic, .progresschart {
+        width: 375px;
+        /*box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+border-radius: 4px;*/
+        border: none;
+    }
+
+    .title {
+        justify-content: flex-end;
+    }
+
+    .dealsgraphic .toprowchild1, .progresschart .toprowchild1 {
+        display: none;
+
+    }
+
+    .mobileonly {
+        width: 323px;
+    }
+
+    .progressmaingrid {
+        padding-top: 16px;
+    }
+
+    .progresschart {
+        padding-bottom: 16px;
+    }
+
+    .progresspic {
+        margin: 0 auto;
+    }
+
+    .progresspic svg {
+        width: 200px;
+        height: 200px;
+    }
+
+    /*.mobilecard{
+    display:grid;
+    grid-template-columns: repeat (6, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    grid-template-areas: 
+    "gridinfo gridinfo gridinfo gridinfo  tasktype tasktype"
+    "person person person trash statuswithicon statuswithicon";
+}
+
+.trash{
+    grid-area: trash;
+}*/
+}
